@@ -22,4 +22,22 @@ if c > a:
     else:
         max = b
 
-print(f"최대값: {max}")
+
+
+
+        
+
+# 강사님 코드
+# print(f"최대값: {max}")
+
+# if a >b and a > c:
+#     print(f"최대값: {a}")
+# elif b > c:
+#     print(f"최대값: {b}")
+# else:
+#     print(f"최대값: {c}")
+
+
+
+# 더 간단한 방법
+# print(f"가장 큰 수: {max(a, b, c)}")
