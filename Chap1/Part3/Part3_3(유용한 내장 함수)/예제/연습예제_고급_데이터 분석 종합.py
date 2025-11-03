@@ -86,3 +86,4 @@ best_student_idx = averages.index(max(averages))
 best_student = student_names[best_student_idx]
 best_avg = averages[best_student_idx]
 print(f"{best_student} (평균 {best_avg:.1f}점)")
+
