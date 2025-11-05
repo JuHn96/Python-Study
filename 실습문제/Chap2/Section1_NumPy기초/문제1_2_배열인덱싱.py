@@ -16,4 +16,4 @@ print(arr[:, -1])
 print(arr[1, 2])
 
 # 2행 2열부터 3행 3열까지 출력
-print(arr[1:3, 1:3])
+print(arr[1:3, 1:3])..
