@@ -30,6 +30,3 @@ mean = 0
 std = 1
 gaussian = np.random.normal(mean, std, 1000)
 print(f"평균: {gaussian.mean():.2f}, 표준편차: {gaussian.std():.2f}")
-
-print(np.meshgrid(x, y))
-
