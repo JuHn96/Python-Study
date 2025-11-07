@@ -1,35 +1,28 @@
-import numpy as np
+# import matplotlib.pyplot as plt
 
-# 그리드 생성 (좌표 배열)
-x = np.linspace(-5, 5, 11) 
-y = np.linspace(-5, 5, 11) 
-X, Y = np.meshgrid(x, y) 
-# X 행렬: x 배열을 행 방향으로 반복
-# Y 행렬: y 배열을 열 방향으로 반복
-'''
-np.linspace(start, stop, num)
-균등하게 나눈 숫자 생성
+# x = [1, 2, 3, 4, 5]
+# y = [2, 4, 6, 8, 10]
 
-np.linspace(-5, 5, 11) → -5부터 5까지 11개로 균등 분할
-결과: [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
-'''
-'''
-X, Y = np.meshgrid(x, y)
-1D 배열 2개를 2D 격자로 확장
-모든 (x, y) 좌표 조합을 만듦
-'''
-print("X 좌표:\n", X[:3, :3])  # 일부만 출력
-print("Y 좌표:\n", Y[:3, :3])
+# plt.plot(x, y)
+# plt.xlabel('X축 이름')        # x축 레이블
+# plt.ylabel('Y축 이름')        # y축 레이블
+# plt.title('그래프 제목')       # 제목
+# plt.grid(True)               # 격자 표시
+# plt.show()
 
-# 거리 배열 (원점으로부터의 거리)
-distance = np.sqrt(X**2 + Y**2)
-print("거리:\n", distance[:3, :3])
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
 
-# 가우시안 분포
-mean = 0
-std = 1
-gaussian = np.random.normal(mean, std, 1000)
-print(f"평균: {gaussian.mean():.2f}, 표준편차: {gaussian.std():.2f}")
+# 한글 폰트 설정 (설치된 폰트명으로 변경 가능)
+rcParams['font.family'] = 'Malgun Gothic'  # 또는 'NanumGothic'
+rcParams['axes.unicode_minus'] = False  # 음수 기호 깨짐 방지
 
-print(np.meshgrid(x, y))
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 6, 8, 10]
 
+plt.plot(x, y)
+plt.xlabel('X축 이름')
+plt.ylabel('Y축 이름')
+plt.title('그래프 제목')
+plt.grid(True)
+plt.show()

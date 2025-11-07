@@ -165,7 +165,7 @@ contrast = np.clip((image - 128) * 1.5 + 128, 0, 255)
 
 ---
 
-# [행렬 공식 Click](/Chap2/행렬공식.md)
+# [행렬 공식 Click](/이론자료/Chap2/행렬공식.md)
 
 
 
