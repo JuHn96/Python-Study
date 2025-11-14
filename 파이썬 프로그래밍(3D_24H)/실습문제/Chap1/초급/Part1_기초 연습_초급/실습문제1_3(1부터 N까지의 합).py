@@ -1,0 +1,13 @@
+# 1부터 10까지의 합을 구하세요.
+
+total = 0
+for i in range(1, 11):
+    total += i      
+
+# for에서 1, 11이니까 1부터 들어가면서 시작해서 11이 되기 전 10까지 들어가면서 순차적으로 더해지고 끝남
+
+print(f"1부터 10까지의 합: {total}")
+
+# 간단한 방법
+# total = sum(range(1, 11))
+# print(total)
