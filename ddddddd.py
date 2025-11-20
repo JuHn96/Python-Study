@@ -1,9 +1,9 @@
-from sklearn.datasets import load_iris, load_breast_cancer, load_digits
-from sklearn.ensemble import RandomForestClassifier
-from xgboost import XGBClassifier
-from lightgbm import LGBMClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+from sklearn.datasets import load_iris, load_breast_cancer, load_digits # 붓꽃 데이터
+from sklearn.ensemble import RandomForestClassifier # RandomForest 모델
+from xgboost import XGBClassifier # xgboost 모델
+from lightgbm import LGBMClassifier # LGB 모델
+from sklearn.model_selection import train_test_split # 손글씨 숫자 이미지 데이터
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score # 유방암 데이터
 
 # 데이터 딕셔너리
 datas = {
